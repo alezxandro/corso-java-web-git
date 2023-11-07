@@ -1,4 +1,4 @@
-package src.giocattolaio;
+package src.model;
 
 public class Vendita {
 
