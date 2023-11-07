@@ -1,10 +1,17 @@
 package src.giocattolaio;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class RegistroVenditeGiocattoli extends RegistroVendite{
 
     private List<Vendita> vendite;
+
+    
+
+    public RegistroVenditeGiocattoli() {
+        this.vendite = new ArrayList<>();
+    }
 
     @Override
     public void registraVendita(Giocattolo giocattolo, Cliente cliente) {
