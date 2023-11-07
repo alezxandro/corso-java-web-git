@@ -28,4 +28,9 @@ public class Inventario {
         return giocattoli.removeIf(g -> g.getId() == id);
     }
 
+    public List<Giocattolo> getGiocattoli() {
+        return giocattoli;
+    }
+
+    
 }
