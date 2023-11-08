@@ -12,8 +12,8 @@ public class Test {
         Inventario inventario = new Inventario();
         RegistroVenditeGiocattoli registroVendite = new RegistroVenditeGiocattoli(inventario);
 
-        Giocattolo giocattolo1 = new Giocattolo("Lego", 20.0, 5);
-        Giocattolo giocattolo2 = new Giocattolo("Puzzle", 15.0, 8);
+        Giocattolo giocattolo1 = new Giocattolo("12345","Lego", 20.0, 5);
+        Giocattolo giocattolo2 = new Giocattolo("67890", "Puzzle", 15.0, 8);
         inventario.addGiocattolo(giocattolo1);
         inventario.addGiocattolo(giocattolo2);
 

@@ -63,6 +63,9 @@ public class UserController {
 
         scanner.nextLine(); // clear buffer
 
+
+        System.out.println("Inserisci il codice del modello del giocattolo: ");
+        String codiceModello = scanner.nextLine();
         System.out.println("Inserisci il nome del giocattolo:");
         String nome = scanner.nextLine();
         System.out.println("Inserisci il prezzo del giocattolo:");
@@ -70,7 +73,7 @@ public class UserController {
         System.out.println("Inserisci l'età consigliata per il giocattolo:");
         int etaConsigliata = scanner.nextInt();
 
-        Giocattolo nuovoGiocattolo = new Giocattolo(nome, prezzo, etaConsigliata);
+        Giocattolo nuovoGiocattolo = new Giocattolo(codiceModello, nome, prezzo, etaConsigliata);
         inventario.addGiocattolo(nuovoGiocattolo);
 
         System.out.println("Giocattolo aggiunto all'inventario con successo.");

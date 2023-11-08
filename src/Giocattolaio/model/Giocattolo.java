@@ -5,6 +5,7 @@ public class Giocattolo {
     private static int idCounter = 1;
 
     private int id;
+    private String codiceModello;
     private String nome;
     private double prezzo;
     private int etaConsigliata;
@@ -12,7 +13,8 @@ public class Giocattolo {
 
     
 
-    public Giocattolo(String nome, double prezzo, int etaConsigliata) {
+    public Giocattolo(String codiceModello, String nome, double prezzo, int etaConsigliata) {
+        this.codiceModello = codiceModello;
         this.id = idCounter++;
         this.nome = nome;
         this.prezzo = prezzo;

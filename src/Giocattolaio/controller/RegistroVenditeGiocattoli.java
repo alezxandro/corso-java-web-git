@@ -55,8 +55,8 @@ public class RegistroVenditeGiocattoli extends RegistroVendite{
         }
     }
     
-    public void registraGiocattolo (String nome, double prezzo, int etaConsigliata) {
-        Giocattolo giocattolo = new Giocattolo(nome, prezzo, etaConsigliata);
+    public void registraGiocattolo (String codiceModello, String nome, double prezzo, int etaConsigliata) {
+        Giocattolo giocattolo = new Giocattolo(codiceModello, nome, prezzo, etaConsigliata);
         registraGiocattolo(giocattolo);
         
     }
