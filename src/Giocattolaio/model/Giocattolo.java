@@ -52,6 +52,12 @@ public class Giocattolo {
     public void setDisponibile(boolean disponibile) {
         this.disponibile = disponibile;
     }
+    public String getCodiceModello() {
+        return codiceModello;
+    }
+    public void setCodiceModello(String codiceModello) {
+        this.codiceModello = codiceModello;
+    }
 
     @Override
     public String toString() {

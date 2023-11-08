@@ -30,6 +30,23 @@ public class Inventario {
         return null;
     }
 
+    public List<Giocattolo> getByCodiceModello (String codiceModello) {
+
+        List<Giocattolo> giocattoliByCodiceModello = new ArrayList<>();
+
+        for (Giocattolo giocattolo : giocattoli) {
+            if (giocattolo.getCodiceModello().equals(codiceModello)) {
+                giocattoliByCodiceModello.add(giocattolo);
+            }
+        }
+
+        if (giocattoliByCodiceModello.isEmpty()) {
+            return null;
+        }
+
+        return giocattoliByCodiceModello;
+    }
+
     public void addGiocattolo(Giocattolo giocattolo) {
         giocattoli.add(giocattolo);
     } 
