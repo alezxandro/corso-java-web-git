@@ -39,7 +39,7 @@ public class UserController {
                 default:
                     System.out.println("Scelta non valida. Riprova.");
             }
-        } while (scelta != 3);
+        } while (scelta != 4);
     }
 
     private int sceltaInterfacciaUtente() {
