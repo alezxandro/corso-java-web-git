@@ -1,4 +1,4 @@
-package src.model;
+package src.Giocattolaio.model;
 
 import java.util.ArrayList;
 import java.util.List;

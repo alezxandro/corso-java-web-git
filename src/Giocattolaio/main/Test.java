@@ -1,11 +1,11 @@
-package src.main;
+package src.Giocattolaio.main;
 
-import src.controller.UserController;
-import src.model.Inventario;
-import src.controller.RegistroVenditeGiocattoli;
-import src.model.Giocattolo;
-import src.model.Cliente;
-import src.model.Vendita;
+import src.Giocattolaio.controller.RegistroVenditeGiocattoli;
+import src.Giocattolaio.controller.UserController;
+import src.Giocattolaio.model.Cliente;
+import src.Giocattolaio.model.Giocattolo;
+import src.Giocattolaio.model.Inventario;
+import src.Giocattolaio.model.Vendita;
 
 public class Test {
     public static void main(String[] args) {

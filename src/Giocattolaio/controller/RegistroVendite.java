@@ -1,10 +1,10 @@
-package src.controller;
+package src.Giocattolaio.controller;
 
 import java.util.List;
 
-import src.model.Cliente;
-import src.model.Giocattolo;
-import src.model.Vendita;
+import src.Giocattolaio.model.Cliente;
+import src.Giocattolaio.model.Giocattolo;
+import src.Giocattolaio.model.Vendita;
 
 public abstract class RegistroVendite {
     public abstract void registraVendita(Giocattolo giocattolo, Cliente cliente);

@@ -1,11 +1,11 @@
-package src.controller;
-
-import src.model.Inventario;
-import src.model.Giocattolo;
-import src.model.Cliente;
-import src.model.Vendita;
+package src.Giocattolaio.controller;
 
 import java.util.Scanner;
+
+import src.Giocattolaio.model.Cliente;
+import src.Giocattolaio.model.Giocattolo;
+import src.Giocattolaio.model.Inventario;
+import src.Giocattolaio.model.Vendita;
 
 public class UserController {
     private Inventario inventario;
