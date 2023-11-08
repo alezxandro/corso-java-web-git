@@ -55,9 +55,11 @@ public class Giocattolo {
 
     @Override
     public String toString() {
-        return "Giocattolo [id=" + id + ", nome=" + nome + ", prezzo=" + prezzo + ", etaConsigliata=" + etaConsigliata
-                + "]";
+        return "Giocattolo [id=" + id + ", codiceModello=" + codiceModello + ", nome=" + nome + ", prezzo=" + prezzo
+                + ", etaConsigliata=" + etaConsigliata + ", disponibile=" + disponibile + "]";
     }
+
+    
 
     
 
