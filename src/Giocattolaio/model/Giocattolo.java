@@ -8,6 +8,7 @@ public class Giocattolo {
     private String nome;
     private double prezzo;
     private int etaConsigliata;
+    private boolean disponibile;
 
     
 
@@ -16,6 +17,7 @@ public class Giocattolo {
         this.nome = nome;
         this.prezzo = prezzo;
         this.etaConsigliata = etaConsigliata;
+        this.disponibile = true;
     }
 
     public int getId() {
@@ -41,6 +43,12 @@ public class Giocattolo {
     }
     public void setEtaConsigliata(int etaConsigliata) {
         this.etaConsigliata = etaConsigliata;
+    }
+    public boolean isDisponibile() {
+        return disponibile;
+    }
+    public void setDisponibile(boolean disponibile) {
+        this.disponibile = disponibile;
     }
 
     @Override

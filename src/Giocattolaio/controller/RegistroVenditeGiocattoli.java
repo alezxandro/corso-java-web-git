@@ -21,12 +21,12 @@ public class RegistroVenditeGiocattoli extends RegistroVendite{
 
     @Override
     public void registraVendita(Giocattolo giocattolo, Cliente cliente) {
-        if (giocattolo != null && cliente != null) {
+        if (giocattolo != null && cliente != null && giocattolo.isDisponibile()) {
             int giocattoloId = giocattolo.getId();
             int clienteId = cliente.getId();
             if (inventario.getById(giocattoloId) != null) {
                 vendite.add(new Vendita(giocattoloId, clienteId));
-                inventario.removeGiocattolo(giocattoloId);
+                giocattolo.setDisponibile(false);
             }
             else {
                 System.out.println("Giocattolo non disponibile nell'inventario");
