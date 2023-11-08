@@ -42,5 +42,20 @@ public class Inventario {
         return giocattoli;
     }
 
+    public List<Giocattolo> getGiocattoliDisponibili () {
+        List<Giocattolo> giocattoliDisponibili = new ArrayList<>();
+        for (Giocattolo giocattolo : giocattoli) {
+            if (giocattolo.isDisponibile()) {
+                giocattoliDisponibili.add(giocattolo);
+            }
+        }
+
+        if (giocattoliDisponibili.isEmpty()) {
+            return null;
+        }
+
+        return giocattoliDisponibili;
+    }
+
     
 }
