@@ -1,0 +1,4 @@
+= Java Web - GIT
+
+This repository contains all the projects developed during the Java Web course I am doing in ELIS. +
+This course requires also using GitHub for versioning the projects.
