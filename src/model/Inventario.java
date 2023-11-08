@@ -20,6 +20,16 @@ public class Inventario {
         return null;
     }
 
+    public Giocattolo getByName(String name) {
+        for (Giocattolo giocattolo : giocattoli) {
+            if (giocattolo.getNome().equals(name)) {
+                return giocattolo;
+            }
+        }
+
+        return null;
+    }
+
     public void addGiocattolo(Giocattolo giocattolo) {
         giocattoli.add(giocattolo);
     } 
