@@ -17,11 +17,11 @@ public class UserController {
         this.registroVendite = registroVendite;
     }
 
-    public void avviaInterfacciaUtente() {
+    public void menu() {
         int scelta;
 
         do {
-            scelta = sceltaInterfacciaUtente();
+            scelta = userInterfaceOption();
 
             switch (scelta) {
                 case 1:
@@ -42,7 +42,7 @@ public class UserController {
         } while (scelta != 4);
     }
 
-    private int sceltaInterfacciaUtente() {
+    private int userInterfaceOption() {
         int scelta;
 
         do {

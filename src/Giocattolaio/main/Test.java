@@ -18,6 +18,6 @@ public class Test {
         inventario.addGiocattolo(giocattolo2);
 
         UserController controller = new UserController(inventario, registroVendite);
-        controller.avviaInterfacciaUtente();
+        controller.menu();
     }
 }
