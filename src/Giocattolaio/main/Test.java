@@ -9,6 +9,7 @@ import src.Giocattolaio.model.Vendita;
 
 public class Test {
     public static void main(String[] args) {
+        System.out.println("Test.main() branch main");
         Inventario inventario = new Inventario();
         RegistroVenditeGiocattoli registroVendite = new RegistroVenditeGiocattoli(inventario);
 
